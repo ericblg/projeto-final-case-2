@@ -1,0 +1,164 @@
+<header>
+  <div id="title">
+    <h1>Marcador</h1>
+    <br>
+    <h1>de Ponto</h1>
+  </div>
+  <ul>
+    <a href="http://localhost:8081/formulario"><li>Formulário</a></li>
+    <a href="http://localhost:8081/listar"><li>Listar</a></li>
+    <a href="http://localhost:8081/editar"><li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="editar" title="Editar"></a></li>
+    <a href="http://localhost:8081/deletar"><li><img src="https://cdn-icons-png.flaticon.com/512/3405/3405244.png" alt="deletar" title="Deletar"></a></li>
+  </ul>
+</header>
+<style>
+
+  * { margin: 0; padding: 0; }
+  
+   body {
+    color: #ffffff;
+    background: rgb(43, 43, 43);
+    font-family: "Inconsolata", monospace;
+    text-align: center; } 
+
+  #title {
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 80px;
+    font-family: "Inconsolata", monospace;
+      
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;    
+    background-color: #bd87e4;
+    padding: 2px;
+ } 
+  
+  ul {
+    margin-top: 10px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    cursor:pointer;
+    gap: 10px; } 
+  
+  li { 
+    display: inline-block;
+    margin: 20px;
+    } 
+    
+  a {
+    text-decoration: none;
+    color: white; 
+    }
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+
+  
+  @media screen and (max-width: 760px){
+
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
+
+{{!-- Form --}}
+
+form {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #bd87e4;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+input {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: #afafaf;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid #bd87e4;
+    border-right: 2px solid #bd87e4;
+    background: none;    
+}
+
+input[type=text]:focus {
+  border: 5px solid #bd87e4;
+}
+
+textarea {
+    
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: #afafaf;
+    outline-style: none;
+    border: none;
+    border-bottom: 2px solid #bd87e4;
+    border-right: 2px solid #bd87e4;
+    background: none;
+}
+
+textarea:focus {
+  border: 5px solid #bd87e4;
+}
+
+</style>
